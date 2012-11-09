@@ -117,6 +117,10 @@ public class AdminActivity  extends Activity {
 	private OnClickListener logoutClickListener = new OnClickListener() {
 		public void onClick(View v) {
 			//Logout	
+			ParseUser.logOut();
+			finish();
+			Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+			startActivity(mainActivity);
 		}
 	};
 }
