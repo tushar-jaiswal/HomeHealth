@@ -24,7 +24,6 @@
     <string name="help">Help</string>
     <string name="symptom">Record Symtoms</string>
     <string name="diagnosis">Diagnosis</string>
-    <string name="diagnosisHint">Your Diagnosis</string>
     <string name="diagnosis_button">Send Diagnosis</string>
     <string name="role">Are you a Patient or a Doctor?</string>
     <string name="symptoms">Symptoms</string>
@@ -40,6 +39,10 @@
     <string name="title_activity_logout">LogoutActivity</string>
     <string name="title_activity_reset_password">ResetPasswordActivity</string>
     <string name="title_activity_admin">AdminActivity</string>
+    <string name="patientName">Patient Name</string>
+    <string name="title_activity_patient_diagnosis">PatientDiagnosisActivity</string>
+    <string name="title_activity_give_diagnosis">GiveDiagnosisActivity</string>
+    <string name="diagnosisHint">Your Diagnosis</string>
     <string name="selectPatient">Select a patient</string>
 
 </resources>

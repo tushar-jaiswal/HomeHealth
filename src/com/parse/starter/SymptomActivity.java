@@ -1,6 +1,7 @@
 package com.parse.starter;
 
 import java.text.DateFormat;
+import java.util.Date;
 import java.util.List;
 
 import com.parse.FindCallback;
@@ -49,12 +50,12 @@ public class SymptomActivity extends Activity {
 
 		setContentView(R.layout.activity_symptom);
 		
-		populateSpinner();
+	
 		/*setTitle(R.string.app_name);*/
 	}
 
 	
-	public void populateSpinner() {
+	/*public void populateSpinner() {
 		
 		final Spinner docRolesSpinner = (Spinner)findViewById(R.id.docRolesSpinner);
 		Spinner docNameSpinner = (Spinner)findViewById(R.id.docNameSpinner);
@@ -101,7 +102,7 @@ public class SymptomActivity extends Activity {
 			}
 		
 		});
-	}
+	}*/
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.patientmenu, menu);
@@ -142,15 +143,15 @@ public class SymptomActivity extends Activity {
 
 
 			DatePicker symptomDateWidget = (DatePicker) findViewById(R.id.sympDate);
-			String symptomDate = DateFormat.getDateInstance().format(symptomDateWidget.getCalendarView().getDate());
+			Date symptomDate = new Date(symptomDateWidget.getCalendarView().getDate());
 
 
 
 			Spinner doctorRolesSpinner = (Spinner) findViewById(R.id.docRolesSpinner);
 			String doctorRole = String.valueOf(doctorRolesSpinner.getSelectedItem());
 
-			Spinner doctorNameSpinner = (Spinner) findViewById(R.id.docNameSpinner);
-			String doctorName = String.valueOf(doctorNameSpinner.getSelectedItem());
+			
+			
 
 			ParseObject mySymptom = new ParseObject("UserSymptoms");
 			mySymptom.put("symptoms", symptoms);
@@ -158,7 +159,7 @@ public class SymptomActivity extends Activity {
 			mySymptom.put("doctorRole", doctorRole);
 			
 			/*mySymptom.put("doctorName", doctorName);*/
-			mySymptom.put("user", ParseUser.getCurrentUser());
+			mySymptom.put("username", ParseUser.getCurrentUser().getUsername());
 			mySymptom.saveInBackground();
 			Toast.makeText(getApplicationContext(), "Symptom saved successfully!", Toast.LENGTH_SHORT).show();
 			Intent helpActivity = new Intent(this, HelpActivity.class);

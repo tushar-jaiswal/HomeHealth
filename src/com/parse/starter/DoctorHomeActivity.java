@@ -34,15 +34,19 @@ public class DoctorHomeActivity  extends Activity   {
 	}
 	
 	 @Override
-	    public boolean onOptionsItemSelected(MenuItem item) {
-	      switch (item.getItemId()) {
-	      case R.id.diagnosis:
-	        Intent diagnosisActivity = new Intent(this, GiveDiagnosisActivity.class);
-	        startActivity(diagnosisActivity); 
-	        break;
-	      default:
-	        break;
-	      }
-	      return true;
-	      }
+		public boolean onOptionsItemSelected(MenuItem item) {
+			switch (item.getItemId()) {
+			case R.id.diagnosis:
+				Intent giveDiagnosisActivity = new Intent(this, GiveDiagnosisActivity.class);
+				startActivity(giveDiagnosisActivity); 
+				break;
+			case R.id.logout:
+				Intent logoutActivity = new Intent(this, LogoutActivity.class);
+				startActivity(logoutActivity); 
+				break;
+			default:
+				break;
+			}
+			return true;
+		}
 }

@@ -48,6 +48,10 @@ public class PatientHomeActivity  extends Activity   {
 				Intent helpActivity = new Intent(this, HelpActivity.class);
 				startActivity(helpActivity); 
 				break;
+			case R.id.patientDiagnosis:
+				Intent patientDiagnosis = new Intent(this, PatientDiagnosisActivity.class);
+				startActivity(patientDiagnosis); 
+				break;
 			case R.id.logout:
 				Intent logoutActivity = new Intent(this, LogoutActivity.class);
 				startActivity(logoutActivity); 

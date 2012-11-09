@@ -11,6 +11,10 @@
         android:title="@string/help"
         android:showAsAction="always" 
         android:icon="@drawable/helpicon"/>
+     <item android:id="@+id/patientDiagnosis"
+        android:title="@string/diagnosis"
+        android:showAsAction="always" 
+        android:icon="@drawable/diagnosisicon"/>
      <item android:id="@+id/logout"
         android:title="@string/logout"
         android:showAsAction="always" 
