@@ -37,7 +37,7 @@ public class DoctorHomeActivity  extends Activity   {
 	    public boolean onOptionsItemSelected(MenuItem item) {
 	      switch (item.getItemId()) {
 	      case R.id.diagnosis:
-	        Intent diagnosisActivity = new Intent(this, DiagnosisActivity.class);
+	        Intent diagnosisActivity = new Intent(this, GiveDiagnosisActivity.class);
 	        startActivity(diagnosisActivity); 
 	        break;
 	      default:
