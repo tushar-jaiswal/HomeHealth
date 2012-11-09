@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/profile"
+        android:title="@string/profile"
+        android:showAsAction="always" 
+        android:icon="@drawable/profileicon"/>
+    <item android:id="@+id/symptom"
+        android:title="@string/symptom"
+        android:showAsAction="always" 
+        android:icon="@drawable/sickicon"/>
+     <item android:id="@+id/help"
+        android:title="@string/help"
+        android:showAsAction="always" 
+        android:icon="@drawable/helpicon"/>
+     <item android:id="@+id/logout"
+        android:title="@string/logout"
+        android:showAsAction="always" 
+        android:icon="@drawable/logouticon"/>
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollHelp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- Put form controls here -->
+
+        
+         <Spinner
+			    android:id="@+id/helpDocRolesSpinner"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:entries="@array/doctorRoles"
+        		android:prompt="@string/doctorRole"	 
+			    />
+         
+           <Spinner
+			    android:id="@+id/helpDocNameSpinner"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:prompt="@string/docName"	 
+			    />
+
+       
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:onClick="getHelp"
+            android:text="Get Help!" />
+    </LinearLayout>
+
+</ScrollView>

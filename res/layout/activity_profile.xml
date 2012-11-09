@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollViewProfile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- Put form controls here -->
+
+        <EditText
+            android:id="@+id/allergies"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/allergies"
+            android:inputType="text" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/longTermIllness"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/longTermIllness"
+            android:inputType="textMultiLine"
+            android:lines="5" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/height"
+            android:inputType="text" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weight"
+            android:inputType="text" >
+        </EditText>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:text="@string/dob"
+            android:textColor="@android:color/white" />
+
+        <DatePicker
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:minDate="01/01/1900" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:onClick="createProfile"
+            android:text="Update Profile" />
+    </LinearLayout>
+
+</ScrollView>

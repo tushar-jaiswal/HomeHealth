@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roles">
+        <item>Patient</item>
+        <item>Physician</item>
+        <item>Pediatrician</item>
+        <item>Cardiologist</item>
+        <item>Gastrologist</item>
+        <item>Gynecologist</item>
+        <item>Pathologist</item>
+        <item>Orthopedist</item>
+        <item>Ophthalmologist</item>
+        <item>Dentist</item>
+        <item>Dermatologist</item>
+    </string-array>
+    
+       <string-array name="doctorRoles">
+        <item>Physician</item>
+        <item>Pediatrician</item>
+        <item>Cardiologist</item>
+        <item>Gastrologist</item>
+        <item>Gynecologist</item>
+        <item>Pathologist</item>
+        <item>Orthopedist</item>
+        <item>Ophthalmologist</item>
+        <item>Dentist</item>
+        <item>Dermatologist</item>
+    </string-array>
+</resources>
